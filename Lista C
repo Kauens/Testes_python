@@ -1,0 +1,45 @@
+chamada=["ana","julia","pedro","fernanda","carlos"]
+for nome in chamada:
+  print(nome)
+
+
+frutas = ['maça', 'banana', 'uva']
+
+for _ in range(3):
+    fruta = input("Digite uma fruta: ").strip().lower()
+    if fruta in frutas:
+        print("Fruta já existe.")
+    else:
+        frutas.append(fruta)
+
+for f in sorted(frutas):
+    print(f.capitalize())
+
+
+cidades = ['São Paulo', 'Rio De Janeiro', 'Salvador']
+
+nova = input("Nova cidade: ").strip().title()
+
+if nova in cidades:
+    print("Já está na lista.")
+else:
+    pos = int(input("Posição: "))
+    cidades.insert(pos - 1, nova)
+
+for i, c in enumerate(cidades, 1):
+    print(f"{i}. {c}")
+
+
+cores = ['Vermelho', 'laranja', 'Verde', 'Amarelo', 'Rosa']
+
+cor = input("Qual cor remover? ")
+
+if cor in cores:
+    cores.remove(cor)
+    print("Removido")
+else:
+    print("Não existe")
+
+print("Sobrou:")
+for c in cores:
+    print(c)
