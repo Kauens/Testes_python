@@ -1,0 +1,42 @@
+palavras=[]
+print('digite uma palavra ou digite fim para encerrar')
+
+while True:
+   palavra=input(">")
+   if palavra.lower()=="fim":
+      break
+   palavras.append(palavra)
+
+for i, palavra in enumerate(palavras,1):
+ print(f"A palavra {i} é {palavra}")
+
+
+
+numeros=[10, 20, 30, 40, 50]
+soma=0
+for n in numeros:
+  soma+=n
+print("soma",soma)
+
+
+
+numeros = [3, 7, 1, 9, 4, 8, 2, 6, 0, 5]
+maior_que_5 = [num for num in numeros if num > 5]
+print("Números maiores que 5:", maior_que_5)
+
+
+
+import random
+
+numeros = [random.randint(0, 100) for _ in range(12)]
+pares = [num for num in numeros if num % 2 == 0]
+
+print("Quantidade de números pares:", len(pares))
+
+
+
+numeros = [5, -3, 10, -7, 0, 15, -2, 8, -1, 4]
+numeros_sem_negativos = [num if num >= 0 else 0 for num in numeros]
+
+print("Lista original:", numeros)
+print("Lista sem negativos:", numeros_sem_negativos)
