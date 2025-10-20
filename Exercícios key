@@ -1,0 +1,23 @@
+palavras=["casa","carro","bola","abacate","HAITI","CAQUI","LIVE"]
+palavras.sort(key=lambda x:x[-1])
+print(palavras)
+
+
+palavras=["casa","carro","bola","haiti","caqui"]
+palavras.sort(key=lambda x:x[-1])
+print(palavras)
+
+
+numeros=[-10,5,-2,3]
+numeros.sort(key=abs)
+print(numeros)
+
+
+palavras=["banana","uva","abacaxi"]
+palavras.sort(key=len)
+print(palavras)
+
+
+palavras=["casa","carro","bola"]
+palavras.sort(key=lambda x:x[-1])
+print(palavras)
